@@ -1,0 +1,23 @@
+term = xterm-256color
+
+background = #000000
+
+window-padding-x = 10
+window-padding-y = 8
+
+font-family = Monaco
+font-thicken = true
+font-thicken-strength = 128
+
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-opacity = 0.75
+cursor-style-blink = false
+cursor-click-to-move = true
+
+keybind = shift+enter=text:\n
+keybind = cmd+backspace=esc:w
+
+macos-titlebar-style = native
+macos-titlebar-proxy-icon = hidden
+title = " "
