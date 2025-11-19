@@ -21,3 +21,6 @@ keybind = cmd+backspace=esc:w
 macos-titlebar-style = native
 macos-titlebar-proxy-icon = hidden
 title = " "
+
+working-directory = home
+window-inherit-working-directory = false
