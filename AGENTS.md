@@ -1,6 +1,8 @@
 # General
 - Don't run full builds after trivial changes.
 - Unless otherwise stated, do not care _at all_ about backwards compatibility; do not add fallbacks etc. in code in the name of backwards compability. 
+- When wanting to build/compile/deploy, please first check the AGENTS.md in the current dir, as well as in one layer up and down.
+  AGENTS.md files normally have the proper build/deploy command that should be used.
 
 # SwiftUI
 - Be careful with `@Query`. It is good for a view's primary, owned state, but avoid using it for unrelated or secondary data sources just for derived/cosmetic behavior.
@@ -11,4 +13,5 @@
 - For Python projects, always use `uv` with Python version 3.13
 - For one off Python scripts, make sure to use `python3` instead of `python`
 - For one off Python scripts that need dependancies (other than standard ones), use `uv` with the `--with` option, or a temp venv with Python version 3.13 if there are a non-trivial amount of dependancies.
+- When writing Python scripts that need HTTP requests, prefer `requests` over `urllib` / `urllib3`.
 - Only deviate from Python version 3.13 to a version lower if there is some dependancy that doesn't support 3.13 yet, or other such dependancy related problems caused by too new a Python version.
