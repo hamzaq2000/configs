@@ -9,7 +9,7 @@ font-family = Monaco
 font-thicken = true
 font-thicken-strength = 128
 
-shell-integration-features = no-cursor
+shell-integration-features = no-cursor,no-title
 cursor-style = block
 cursor-opacity = 0.75
 cursor-style-blink = false
@@ -20,7 +20,8 @@ keybind = cmd+backspace=esc:w
 
 macos-titlebar-style = native
 macos-titlebar-proxy-icon = hidden
-title = " "
 
-working-directory = home
-window-inherit-working-directory = false
+confirm-close-surface = true
+
+keybind = super+v=paste_from_clipboard
+keybind = super+c=copy_to_clipboard
